@@ -1,0 +1,21 @@
+header{
+    display: block;
+    color: purple;
+    background-color: violet;
+}
+
+.header-list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav {
+    background-color: blue;
+    color: white;
+    display: block;
+}
+
+
+
+
