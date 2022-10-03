@@ -4,23 +4,79 @@ header{
     background-color: violet;
 }
 
+header img{
+    width: 100px;
+    display: block;
+}
 .header-list{
     display: flex;
     justify-content: flex-end;
     list-style: none;
 }
 
-nav {
+.subheader {
     background-color: blue;
     color: white;
     display: block;
+    padding: 10px;
+    margin: 0px;
+}
+.card{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+.card img{
+    width: 100%;
+    height: 80%;
+}
+.card-primary{
+    width: 100%;
+    height: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+.card-secondary{
+    width: 23%;
+}
+#work{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100vw;
+}
+#work h2{
+    display: block;
+    width: calc(25vw - 5px);
+    border-right: 5px solid black;
+    text-align: right;
+    font-size: 3rem;
+}
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 75vw;
+}
 #work ul {
     list-style: none;
 }
+
 
 #contact-me ul{
     list-style: none;
 }
 
+@media screen and (min-width:1000px){
+    .card-primary{
+        width: 70vw;
+    }
+}
+/* @media screen and (max-width: 992px) {
+  }
+  
+  @media screen and (max-width: 768px) {
+  } */
