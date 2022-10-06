@@ -37,27 +37,38 @@ nav a:hover{
     padding: 10px;
 }
 
+.background-img{
+    background-image: url("../images/stars-and-sky.jpeg");
+    height: 300px;
+}
+
+.background-img p{
+    background-color: blue;
+}
 #about-me {
     display: flex;
-    flex-flow: row wrap;
     justify-content: flex-start;
     width: 100vw;
 }
-#about-me h2{
-    display: block;
-    width: calc(25vw - 5px);
+
+h2{
+    display: inline;
+    width: 250px;
     border-right: 5px solid black;
     text-align: right;
     font-size: 3rem;
+    padding: 0 16px 0 0;
 }
 
 .about-article{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     text-align: left;
     padding: 10px;
+    max-width: 1000px;
 }
+
 .card{
     display: flex;
     justify-content: flex-start;
@@ -76,17 +87,26 @@ nav a:hover{
     justify-content: center;
     width: 75vw;
 }
+      
+.card-primary:hover,
+.card-secondary:hover  {
+        box-shadow: inset 0px 0px 8px silver, 0 0 15px silver;
+}
 
 .card-primary{
     width: 100%;
     height: 500px;
     padding-left: 20px;
     padding-right: 20px;
+    transition: all 0.5s ease-in-out;
 }
 
 .card-secondary{
     width: 23%;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
 }
+
 #work{
     display: flex;
     flex-flow: row wrap;
@@ -94,28 +114,18 @@ nav a:hover{
     width: 100vw;
 }
 
-#work h2{
-    display: block;
-    width: calc(25vw - 5px);
-    border-right: 5px solid black;
-    text-align: right;
-    font-size: 3rem;
-}
+#contact-me {
+    display: flex;
+    justify-content: flex-start;
 
-#contact-me h2{
-    display: block;
-    width: calc(25vw - 5px);
-    border-right: 5px solid black;
-    text-align: right;
-    font-size: 3rem;
 }
-
 #contact-me ul{
     list-style: none;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    width: 800px;
 }
 
 #contact-me a{
@@ -132,8 +142,8 @@ footer{
     text-align: center;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   }
   
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   }
